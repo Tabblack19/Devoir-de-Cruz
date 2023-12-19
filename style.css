@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-animate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 5px;
+    width: 850px;
+    height: 750px;
+    background: linear-gradient(45deg, #081b29, #0ef);
+    border-bottom:3px solid #0ef ;
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
+    
+}
+
+input:focus +.label,
+input:valid +.label{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px,-16px) scale(0.88);
+    z-index: 1111;
+}
